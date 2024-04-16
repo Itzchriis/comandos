@@ -73,6 +73,16 @@
             </pre>
             <p>Este comando buscará todos los correos electrónicos válidos en el archivo <code>archivo.txt</code>.</p>
         </li>
+        <li>
+            <p><strong>Búsqueda insensible a mayúsculas y minúsculas</strong></p>
+            <pre>
+                <code>grep -i -r "error" directorio/</code>
+            </pre>
+            <p>-i hace que la búsqueda sea insensible a mayúsculas y minúsculas, por lo que encontrará tanto "error" como "Error", "ERROR", etc. <br>
+            -r hace que grep busque de manera recursiva en todos los archivos dentro del directorio especificado. <br>
+            "error" es el patrón que estamos buscando. <br>
+            directorio/ es el directorio en el que queremos buscar. Asegúrate de reemplazar "directorio/" con la ruta al directorioque deseas explorar.</p>
+        </li>
     </ul>
 </body>
 </html>
