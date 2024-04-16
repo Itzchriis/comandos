@@ -73,7 +73,7 @@
             </pre>
             <p>Este comando buscará todos los correos electrónicos válidos en el archivo <code>archivo.txt</code>.</p>
         </li>
-        <li><!--Realizado Héctor Aparicio>
+        <li><!--Realizado Héctor Aparicio-->
             <p><strong>Búsqueda insensible a mayúsculas y minúsculas</strong></p>
             <pre>
                 <code>grep -i -r "error" directorio/</code>
@@ -83,6 +83,31 @@
             "error" es el patrón que estamos buscando. <br>
             directorio/ es el directorio en el que queremos buscar. Asegúrate de reemplazar "directorio/" con la ruta al directorioque deseas explorar.</p>
         </li>
+        <!--Creado por jorge Alonso-->
+        <li>
+            <p><strong>Buscar líneas que contengan números de teléfono en un archivo:</strong></p>
+            <pre>
+                <code>grep -P '\d{3}-\d{3}-\d{4}' archivo.txt</code>
+            </pre>
+            <p>Este comando buscará líneas que contengan números de teléfono en el formato XXX-XXX-XXXX en el archivo <code>archivo.txt</code>.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar líneas que contengan una dirección IPv4 en un archivo:</strong></p>
+            <pre>
+                <code>grep -E '\b(?:\d{1,3}\.){3}\d{1,3}\b' archivo.txt</code>
+            </pre>
+            <p>Este comando buscará líneas que contengan una dirección IPv4 en el archivo <code>archivo.txt</code>.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar líneas que contengan una dirección de correo electrónico o un número de teléfono en un archivo:</strong></p>
+            <pre>
+                <code>grep -E '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b|\b\d{3}-\d{3}-\d{4}\b' archivo.txt</code>
+            </pre>
+            <p>Este comando buscará líneas que contengan una dirección de correo electrónico o un número de teléfono en el archivo <code>archivo.txt</code>.</p>
+        </li>
     </ul>
+
 </body>
 </html>
