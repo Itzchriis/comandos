@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando Grep en Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comando <code>grep</code> en Linux</h1>
+    <p>El comando <code>grep</code> se utiliza para buscar patrones de texto dentro de archivos.</p>
+    
+    <h2>Sintaxis básica:</h2>
+    <pre>
+        <code>grep [opciones] [patrón] [archivos]</code>
+    </pre>
+    
+    <h2>Ejemplos de uso:</h2>
+    <ul>
+        <li>
+            <p><strong>Buscar una palabra en un archivo:</strong></p>
+            <pre>
+                <code>grep "palabra" archivo.txt</code>
+            </pre>
+            <p>Este comando buscará la palabra "palabra" en el archivo <code>archivo.txt</code>.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar una palabra en varios archivos:</strong></p>
+            <pre>
+                <code>grep "patrón" archivo1.txt archivo2.txt</code>
+            </pre>
+            <p>Este comando buscará el patrón "patrón" en los archivos <code>archivo1.txt</code> y <code>archivo2.txt</code>.</p>
+        </li>
+        
+        <li>
+            <p><strong>Buscar recursivamente en directorios:</strong></p>
+            <pre>
+                <code>grep -r "patrón" directorio</code>
+            </pre>
+            <p>Este comando buscará recursivamente el patrón "patrón" en todos los archivos dentro del directorio <code>directorio</code>.</p>
+        </li>
+        
+        <li>
+            <p><strong>Mostrar número de línea:</strong></p>
+            <pre>
+                <code>grep -n "patrón" archivo.txt</code>
+            </pre>
+            <p>Este comando mostrará el número de línea junto con las coincidencias del patrón "patrón" en el archivo <code>archivo.txt</code>.</p>
+        </li>
+    </ul>
+</body>
+</html>
